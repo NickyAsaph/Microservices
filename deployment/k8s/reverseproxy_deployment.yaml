@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: oussamabouchikhi/reverseproxy:latest
+        - image: nickyasaph/reverseproxy:latest
           name: reverseproxy
           imagePullPolicy: Always
           resources:

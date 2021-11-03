@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udagram-api-feed
-          image: oussamabouchikhi/udagram-api-feed:latest
+          image: nickyasaph/udagram-api-feed:latest
           resources:
             requests:
               memory: '64Mi'
@@ -25,49 +25,49 @@ spec:
               memory: '1024Mi'
               cpu: '500m'
           env:
-            - name: URL
+            - name: http://localhost:8100
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: URL
-            - name: AWS_BUCKET
+                  key: http://localhost:8100
+            - name: udagram-nick
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: AWS_BUCKET
-            - name: AWS_PROFILE
+                  key: udagram-nick
+            - name: eb-cli
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: AWS_PROFILE
-            - name: AWS_REGION
+                  key: eb-cli
+            - name: us-east-1
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: AWS_REGION
-            - name: JWT_SECRET
+                  key: us-east-1
+            - name: hello
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: JWT_SECRET
-            - name: POSTGRES_DB
+                  key: hello
+            - name: nicki
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: POSTGRES_DB
-            - name: POSTGRES_HOST
+                  key: nicki
+            - name: nicki.cr9cvmnikkno.us-east-1.rds.amazonaws.com
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: POSTGRES_HOST
-            - name: POSTGRES_PASSWORD
+                  key: nicki.cr9cvmnikkno.us-east-1.rds.amazonaws.com
+            - name: josephtob
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: POSTGRES_PASSWORD
-            - name: POSTGRES_USERNAME
+                  key: josephtob
+            - name: nicki
               valueFrom:
                 configMapKeyRef:
                   name: env-config
-                  key: POSTGRES_USERNAME
+                  key: nicki
       restartPolicy: Always

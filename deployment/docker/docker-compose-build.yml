@@ -4,18 +4,18 @@ services:
     build:
       context: ../../udagram-api-users
       dockerfile: Dockerfile
-    image: oussamabouchikhi/udagram-api-users
+    image: nickyasaph/udagram-api-users
   udagram-feed:
     build:
       context: ../../udagram-api-feed
       dockerfile: Dockerfile
-    image: oussamabouchikhi/udagram-api-feed
+    image: nickyasaph/udagram-api-feed
   reverseproxy:
     build:
       context: .
       dockerfile: Dockerfile
-    image: oussamabouchikhi/reverseproxy
+    image: nickyasaph/reverseproxy
   udagram-frontend:
     build:
       context: ../../udagram-frontend
-    image: oussamabouchikhi/udagram-frontend
+    image: nickyasaph/udagram-frontend

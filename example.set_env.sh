@@ -3,12 +3,12 @@
 # If you are using Mac or Linux replace 'setx' with export 
 # (and replace the space with =)
 # ex: export POSTGRES_USERNAME=YOUR_POSTGRES_USERNAME
-setx POSTGRES_USERNAME YOUR_POSTGRES_USERNAME
-setx POSTGRES_PASSWORD YOUR_POSTGRES_PASSWORD
-setx POSTGRES_HOST YOUR_POSTGRES_HOST
-setx POSTGRES_DB YOUR_POSTGRES_DB
-setx AWS_BUCKET YOUR_AWS_BUCKET
+setx POSTGRES_USERNAME nicki
+setx POSTGRES_PASSWORD josephtob
+setx POSTGRES_HOST nicki.cr9cvmnikkno.us-east-1.rds.amazonaws.com
+setx POSTGRES_DB nicki
+setx AWS_BUCKET udagram-nick
 setx AWS_REGION us-east-1
-setx AWS_PROFILE default
-setx JWT_SECRET YOUR_JWT_SECRET
+setx AWS_PROFILE eb-cli
+setx JWT_SECRET hello
 setx URL http://localhost:8100
